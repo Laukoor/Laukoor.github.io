@@ -1,322 +1,403 @@
 /* ==========================================================================
    BASE ELEMENTS
    ========================================================================== */
-html {
-  /* sticky footer fix */
-  position: relative;
-  min-height: 100%;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  padding-bottom: 0em;
-  color: $text-color;
-  font-family: $global-font-family;
-  line-height: 1.5;
-
-  &.overflow--hidden {
-    /* when primary navigation is visible, the content in the background won't scroll */
-    overflow: hidden;
+   html {
+    /* 固定页脚修复：使html元素的最小高度为视口高度，确保页面内容至少填满视口 */
+    position: relative;
+    min-height: 100%;
   }
-}
-
-h1, h2, h3, h4, h5, h6 {
-  margin: 1em 0 0.5em;
-  line-height: 1.2;
-  font-family: $header-font-family;
-  font-weight: bold;
-}
-
-h1 {
-  // margin: 4em 0 0.5em;
-  margin-top: 1em;
-  font-size: $type-size-3;
-}
-
-h2 {
-  font-size: $type-size-4;
-}
-
-h3 {
-  font-size: $type-size-5;
-}
-
-h4 {
-  font-size: $type-size-6;
-}
-
-h5 {
-  font-size: $type-size-6;
-}
-
-h6 {
-  font-size: $type-size-6;
-}
-
-small, .small {
-  font-size: $type-size-6;
-}
-
-p {
-  margin-bottom: 0.5em;
-}
-
-u,
-ins {
-  text-decoration: none;
-  border-bottom: 1px solid $text-color;
-  a {
-    color: inherit;
-  }
-}
-
-ul {
-  padding-inline-start: 2em;
-  margin-block-start: 0.5em;
-}
-
-del a {
-  color: inherit;
-}
-
-/* reduce orphans and widows when printing */
-
-p, pre, blockquote, ul, ol, dl, figure, table, fieldset {
-  orphans: 3;
-  widows: 3;
-}
-
-/* abbreviations */
-
-abbr[title],
-abbr[data-original-title] {
-  text-decoration: none;
-  cursor: help;
-  border-bottom: 1px dotted $text-color;
-}
-
-/* blockquotes */
-
-blockquote {
-  margin: 2em 1em 2em 0;
-  padding-left: 1em;
-  padding-right: 1em;
-  font-style: italic;
-  border-left: 0.25em solid $primary-color;
-
-  cite {
-    font-style: italic;
-
-    &:before {
-      content: "\2014";
-      padding-right: 5px;
-    }
-  }
-}
-
-/* links */
-
-a {
   
-  &:focus {
-    @extend %tab-focus;
-  }
-
-  &:hover,
-  &:active {
-    outline: 0;
-  }
-}
-
-/* code */
-
-tt, code, kbd, samp, pre {
-  font-family: $monospace;
-}
-
-pre {
-  overflow-x: auto; /* add scrollbars to wide code blocks*/
-}
-
-p > code,
-a > code,
-li > code,
-figcaption > code,
-td > code {
-  padding-top: 0.1rem;
-  padding-bottom: 0.1rem;
-  font-size: $type-size-5;
-  background: $code-background-color;
-  border: 1px solid $lighter-gray;
-  border-radius: $border-radius;
-  box-shadow: $box-shadow;
-
-  &:before, &:after {
-    letter-spacing: -0.2em;
-    content: "\00a0"; /* non-breaking space*/
-  }
-}
-
-/* horizontal rule */
-
-hr {
-  display: block;
-  margin: 1em 0;
-  border: 0;
-  border-top: 1px solid $border-color;
-}
-
-/* lists */
-
-ul li,
-ol li {
-  margin-bottom: 0.5em;
-}
-
-li ul,
-li ol {
-  margin-top: 0.5em;
-}
-
-/*
-   Media and embeds
-   ========================================================================== */
-
-/* Figures and images */
-
-figure {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-          align-items: flex-start;
-  flex-wrap: wrap;
-  margin: 2em 0;
-
-  img,
-  iframe,
-  .fluid-width-video-wrapper {
-    margin-bottom: 1em;
-  }
-
-  img {
-    width: 100%;
-    border-radius: $border-radius;
-    -webkit-transition: $global-transition;
-    transition: $global-transition;
-  }
-
-  > a {
-    display: block;
-  }
-
-  &.half {
-    > a,
-    > img {
-      @include breakpoint($small) {
-        width: calc(50% - 0.5em);
-      }
-    }
-
-    figcaption {
-      width: 100%;
-    }
-  }
-
-  &.third {
-    > a,
-    > img {
-      @include breakpoint($small) {
-        width: calc(33.3333% - 0.5em);
-      }
-    }
-
-    figcaption {
-      width: 100%;
-    }
-  }
-}
-
-/* Figure captions */
-
-figcaption {
-  margin-bottom: 0.5em;
-  color: mix(#fff, $text-color, 25%);
-  font-family: $caption-font-family;
-  font-size: $type-size-6;
-
-  a {
-    color: inherit;
-    text-decoration: none;
-    border-bottom: 1px solid $light-gray;
-    -webkit-transition: $global-transition;
-    transition: $global-transition;
-
-    &:hover {
-      color: #000;
-      border-bottom-color: #000;
-    }
-  }
-}
-
-
-/* Fix IE9 SVG bug */
-
-svg:not(:root) {
-  overflow: hidden;
-}
-
-
-/*
-   Navigation lists
-   ========================================================================== */
-
-/**
- * Removes margins, padding, and bullet points from navigation lists
- *
- * Example usage:
- * <nav>
- *    <ul>
- *      <li><a href="#link-1">Link 1</a></li>
- *      <li><a href="#link-2">Link 2</a></li>
- *      <li><a href="#link-3">Link 3</a></li>
- *    </ul>
- *  </nav>
- */
-
-nav {
-  ul {
+  body {
+    /* 移除页面的默认外边距和内边距 */
     margin: 0;
     padding: 0;
+    /* 设置底部填充为0em，可以根据需要调整 */
+    padding-bottom: 0em;
+    /* 设置文本颜色，使用之前定义的全局变量$text-color */
+    color: $text-color;
+    /* 设置全局字体族，使用之前定义的$global-font-family */
+    font-family: $global-font-family;
+    /* 设置行高为1.5倍 */
+    line-height: 1.5;
+  
+    &.overflow--hidden {
+      /* 当主导航可见时，隐藏背景内容的滚动条 */
+      overflow: hidden;
+    }
   }
-
-  li {
-    list-style: none;
+  
+  h1, h2, h3, h4, h5, h6 {
+    /* 设置标题的上外边距为1em，下外边距为0.5em */
+    margin: 1em 0 0.5em;
+    /* 设置标题的行高为1.2倍 */
+    line-height: 1.2;
+    /* 使用$header-font-family变量中的字体 */
+    font-family: $header-font-family;
+    /* 设置标题为粗体 */
+    font-weight: bold;
   }
-
-  a {
+  
+  h1 {
+    /* 设置h1标题的上外边距为1em */
+    margin-top: 1em;
+    /* 使用$type-size-3变量定义的字体大小 */
+    font-size: $type-size-3;
+  }
+  
+  h2 {
+    /* 使用$type-size-4变量定义的字体大小 */
+    font-size: $type-size-4;
+  }
+  
+  h3 {
+    /* 使用$type-size-5变量定义的字体大小 */
+    font-size: $type-size-5;
+  }
+  
+  h4 {
+    /* 使用$type-size-6变量定义的字体大小 */
+    font-size: $type-size-6;
+  }
+  
+  h5 {
+    /* 使用$type-size-6变量定义的字体大小 */
+    font-size: $type-size-6;
+  }
+  
+  h6 {
+    /* 使用$type-size-6变量定义的字体大小 */
+    font-size: $type-size-6;
+  }
+  
+  small, .small {
+    /* 设置small元素的字体大小为$type-size-6 */
+    font-size: $type-size-6;
+  }
+  
+  p {
+    /* 设置段落的下外边距为0.5em */
+    margin-bottom: 0.5em;
+  }
+  
+  u,
+  ins {
+    /* 移除下划线和插入文本的默认文本装饰 */
     text-decoration: none;
+    /* 使用$text-color变量设置底部边框，模拟下划线效果 */
+    border-bottom: 1px solid $text-color;
+    a {
+      /* 在下划线或插入文本中的链接继承颜色 */
+      color: inherit;
+    }
   }
-
-  /* override white-space for nested lists */
+  
+  ul {
+    /* 设置无序列表的左填充为2em */
+    padding-inline-start: 2em;
+    /* 设置无序列表的上边距为0.5em */
+    margin-block-start: 0.5em;
+  }
+  
+  del a {
+    /* 设置删除文本中的链接继承颜色 */
+    color: inherit;
+  }
+  
+  /* 防止打印时产生孤行和寡行 */
+  
+  p, pre, blockquote, ul, ol, dl, figure, table, fieldset {
+    /* 孤行控制，确保每段最少3行 */
+    orphans: 3;
+    /* 寡行控制，确保每段最少3行 */
+    widows: 3;
+  }
+  
+  /* 缩略语 */
+  
+  abbr[title],
+  abbr[data-original-title] {
+    /* 移除默认的文本装饰 */
+    text-decoration: none;
+    /* 设置鼠标悬停时的光标样式为帮助 */
+    cursor: help;
+    /* 为缩略语添加虚线下划线 */
+    border-bottom: 1px dotted $text-color;
+  }
+  
+  /* 引用块 */
+  
+  blockquote {
+    /* 设置引用块的外边距，上下为2em，右为1em，左为0 */
+    margin: 2em 1em 2em 0;
+    /* 设置引用块的左填充和右填充为1em */
+    padding-left: 1em;
+    padding-right: 1em;
+    /* 设置引用块的字体样式为斜体 */
+    font-style: italic;
+    /* 设置引用块左侧的边框颜色为$primary-color */
+    border-left: 0.25em solid $primary-color;
+  
+    cite {
+      /* 设置引用来源的字体样式为斜体 */
+      font-style: italic;
+  
+      &:before {
+        /* 在引用前添加破折号 */
+        content: "\2014";
+        /* 设置破折号后的填充为5px */
+        padding-right: 5px;
+      }
+    }
+  }
+  
+  /* 链接样式 */
+  
+  a {
+    /* 设置链接的焦点状态样式，使用Sass的@extend继承%tab-focus的样式 */
+    &:focus {
+      @extend %tab-focus;
+    }
+  
+    &:hover,
+    &:active {
+      /* 移除链接在悬停和激活状态下的轮廓线 */
+      outline: 0;
+    }
+  }
+  
+  /* 代码块和行内代码 */
+  
+  tt, code, kbd, samp, pre {
+    /* 设置等宽字体，使用之前定义的$monospace变量 */
+    font-family: $monospace;
+  }
+  
+  pre {
+    /* 为预格式化文本块添加水平滚动条，以适应超宽内容 */
+    overflow-x: auto;
+  }
+  
+  p > code,
+  a > code,
+  li > code,
+  figcaption > code,
+  td > code {
+    /* 设置行内代码的上填充和下填充为0.1rem */
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    /* 设置行内代码的字体大小为$type-size-5 */
+    font-size: $type-size-5;
+    /* 设置行内代码的背景颜色为$code-background-color */
+    background: $code-background-color;
+    /* 设置行内代码的边框颜色为$lighter-gray */
+    border: 1px solid $lighter-gray;
+    /* 设置行内代码的圆角 */
+    border-radius: $border-radius;
+    /* 设置行内代码的阴影效果 */
+    box-shadow: $box-shadow;
+  
+    &:before, &:after {
+      /* 设置行内代码的前后内容为不可断行的空格，调整字母间距 */
+      letter-spacing: -0.2em;
+      content: "\00a0"; /* 不可断行的空格 */
+    }
+  }
+  
+  /* 水平线 */
+  
+  hr {
+    /* 显示为块级元素 */
+    display: block;
+    /* 设置水平线的上下边距为1em */
+    margin: 1em 0;
+    /* 移除默认的边框 */
+    border: 0;
+    /* 设置顶部边框颜色为$border-color */
+    border-top: 1px solid $border-color;
+  }
+  
+  /* 列表项 */
+  
   ul li,
   ol li {
-    margin-bottom: 0;
+    /* 设置列表项的下外边距为0.5em */
+    margin-bottom: 0.5em;
   }
-
+  
   li ul,
   li ol {
-    margin-top: 0;
+    /* 设置嵌套列表的上外边距为0.5em */
+    margin-top: 0.5em;
   }
-}
-
-/*
-   Global animation transition
-   ========================================================================== */
-
-b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a, tr, td, form button, input[type="submit"], .btn, .highlight, .archive__item-teaser {
-  -webkit-transition: $global-transition;
-  transition: $global-transition;
-}
+  
+  /* 
+     媒体和嵌入
+     ========================================================================== */
+  
+  /* 图像和视频嵌入容器 */
+  
+  figure {
+    /* 使用flexbox布局，使子元素能够自动调整位置 */
+    display: -webkit-box;
+    display: flex;
+    /* 设置子元素在主轴上的对齐方式为两端对齐 */
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    /* 设置子元素在交叉轴上的对齐方式为起点对齐 */
+    -webkit-box-align: start;
+            align-items: flex-start;
+    /* 允许子元素换行 */
+    flex-wrap: wrap;
+    /* 设置figure的上下外边距为2em */
+    margin: 2em 0;
+  
+    img,
+    iframe,
+    .fluid-width-video-wrapper {
+      /* 设置图像、iframe或视频的底部外边距为1em */
+      margin-bottom: 1em;
+    }
+  
+    img {
+      /* 设置图像宽度为100%，以适应其容器 */
+      width: 100%;
+      /* 为图像添加圆角 */
+      border-radius: $border-radius;
+      /* 设置图像的过渡效果，使用全局定义的$global-transition */
+      -webkit-transition: $global-transition;
+      transition: $global-transition;
+    }
+  
+    > a {
+      /* 设置直接子元素a为块级元素 */
+      display: block;
+    }
+  
+    &.half {
+      > a,
+      > img {
+        /* 在屏幕宽度小于$small的断点下，图像和链接宽度为50%减去0.5em */
+        @include breakpoint($small) {
+          width: calc(50% - 0.5em);
+        }
+      }
+  
+      figcaption {
+        /* 设置图片标题宽度为100% */
+        width: 100%;
+      }
+    }
+  
+    &.third {
+      > a,
+      > img {
+        /* 在屏幕宽度小于$small的断点下，图像和链接宽度为33.3333%减去0.5em */
+        @include breakpoint($small) {
+          width: calc(33.3333% - 0.5em);
+        }
+      }
+  
+      figcaption {
+        /* 设置图片标题宽度为100% */
+        width: 100%;
+      }
+    }
+  }
+  
+  /* 图片标题 */
+  
+  figcaption {
+    /* 设置图片标题的下外边距为0.5em */
+    margin-bottom: 0.5em;
+    /* 设置图片标题的颜色，为$白色和文本颜色的混合 */
+    color: mix(#fff, $text-color, 25%);
+    /* 设置图片标题的字体族，使用$caption-font-family变量 */
+    font-family: $caption-font-family;
+    /* 设置图片标题的字体大小为$type-size-6 */
+    font-size: $type-size-6;
+  
+    a {
+      /* 设置链接颜色继承图片标题的颜色 */
+      color: inherit;
+      /* 移除链接的下划线 */
+      text-decoration: none;
+      /* 为链接添加底部边框，颜色为$light-gray */
+      border-bottom: 1px solid $light-gray;
+      /* 设置链接的过渡效果，使用全局定义的$global-transition */
+      -webkit-transition: $global-transition;
+      transition: $global-transition;
+  
+      &:hover {
+        /* 当鼠标悬停时，链接颜色变为黑色，底部边框颜色也变为黑色 */
+        color: #000;
+        border-bottom-color: #000;
+      }
+    }
+  }
+  
+  
+  /* 修复IE9中SVG显示问题 */
+  
+  svg:not(:root) {
+    /* 防止SVG图标的溢出问题 */
+    overflow: hidden;
+  }
+  
+  
+  /*
+     导航列表
+     ========================================================================== */
+  
+  /**
+   * 移除导航列表中的外边距、内边距和项目符号
+   *
+   * 示例用法:
+   * <nav>
+   *    <ul>
+   *      <li><a href="#link-1">Link 1</a></li>
+   *      <li><a href="#link-2">Link 2</a></li>
+   *      <li><a href="#link-3">Link 3</a></li>
+   *    </ul>
+   *  </nav>
+   */
+  
+  nav {
+    ul {
+      /* 移除导航列表的外边距和内边距 */
+      margin: 0;
+      padding: 0;
+    }
+  
+    li {
+      /* 移除导航列表项的项目符号 */
+      list-style: none;
+    }
+  
+    a {
+      /* 移除链接的下划线 */
+      text-decoration: none;
+    }
+  
+    /* 覆盖嵌套列表中的白边距 */
+    ul li,
+    ol li {
+      /* 移除嵌套列表项的底部外边距 */
+      margin-bottom: 0;
+    }
+  
+    li ul,
+    li ol {
+      /* 移除嵌套列表的顶部外边距 */
+      margin-top: 0;
+    }
+  }
+  
+  /*
+     全局动画过渡
+     ========================================================================== */
+  
+  b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a, tr, td, form button, input[type="submit"], .btn, .highlight, .archive__item-teaser {
+    /* 为这些元素添加全局过渡效果 */
+    -webkit-transition: $global-transition;
+    transition: $global-transition;
+  }

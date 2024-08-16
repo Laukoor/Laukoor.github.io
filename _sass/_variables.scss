@@ -3,159 +3,160 @@
    ========================================================================== */
 
 /*
-   Typography
+   Typography  // 字体设置
    ========================================================================== */
 
-$doc-font-size              : 14;
+   $doc-font-size              : 14;  // 文档的基础字体大小设置为14px
 
-/* paragraph indention */
-$paragraph-indent           : false; // true, false (default)
-$indent-var                 : 0.5em;
-
-/* system typefaces */
-$serif                      : Georgia, Times, serif;
-// $sans-serif                 : "Trebuchet MS", Helvetica, sans-serif;
-$sans-serif                 : "Cascadia Code", monospace;
-
-// $sans-serif                 : Georgia, serif, sans-serif;
-
-// $sans-serif                 : -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
-
-$monospace                  : "Consolas", monospace;
-//$monospace                  : Monaco, Consolas, "Lucida Console", monospace;
-
-/* sans serif typefaces */
-$sans-serif-narrow          : $sans-serif;
-$helvetica                  : Helvetica, "Helvetica Neue", Arial, sans-serif;
-
-/* serif typefaces */
-$georgia                    : Georgia, serif;
-$times                      : Times, serif;
-$bodoni                     : "Bodoni MT", serif;
-$calisto                    : "Calisto MT", serif;
-$garamond                   : Garamond, serif;
-
-$global-font-family         : $sans-serif;
-$header-font-family         : $sans-serif;
-$caption-font-family        : $serif;
-
-/* type scale */
-$type-size-1                : 2.441em;  // ~39.056px
-$type-size-2                : 1.953em;  // ~31.248px
-$type-size-3                : 1.4em;  // ~25.008px
-$type-size-4                : 1.2em;   // ~20px
-$type-size-5                : 1em;      // ~16px
-$type-size-6                : 1em;   // ~12px
-$type-size-7                : 0.6875em; // ~11px
-$type-size-8                : 0.625em;  // ~10px
-
-
-/*
-   Colors
-   ========================================================================== */
-
-$gray                       : #7a8288;
-$dark-gray                  : mix(#000, $gray, 40%);
-$darker-gray                : mix(#000, $gray, 60%);
-$light-gray                 : mix(#fff, $gray, 50%);
-$lighter-gray               : mix(#fff, $gray, 90%);
-
-$body-color                 : #fff;
-$background-color           : #fff;
-$code-background-color      : #fafafa;
-$code-background-color-dark : $light-gray;
-$text-color                 : $dark-gray;
-$border-color               : $lighter-gray;
-
-$primary-color              : #7a8288;
-$success-color              : #62c462;
-$warning-color              : #f89406;
-$danger-color               : #ee5f5b;
-$info-color                 : #224b8d;
-// $info-color                 : #52adc8;
-
-/* brands */
-$behance-color              : #1769FF;
-$dribbble-color             : #ea4c89;
-$facebook-color             : #3b5998;
-$flickr-color               : #ff0084;
-$foursquare-color           : #0072b1;
-$github-color               : #171516;
-$google-plus-color          : #dd4b39;
-$instagram-color            : #517fa4;
-$lastfm-color               : #d51007;
-$linkedin-color             : #007bb6;
-$pinterest-color            : #cb2027;
-$rss-color                  : #fa9b39;
-$soundcloud-color           : #ff3300;
-$stackoverflow-color        : #fe7a15;
-$tumblr-color               : #32506d;
-$twitter-color              : #55acee;
-$vimeo-color                : #1ab7ea;
-$vine-color                 : #00bf8f;
-$youtube-color              : #bb0000;
-$xing-color                 : #006567;
-
-
-/* links */
-$link-color                 : $info-color;
-$link-color-hover           : mix(#000, $link-color, 25%);
-$link-color-visited         : mix(#fff, $link-color, 25%);
-$masthead-link-color        : $primary-color;
-$masthead-link-color-hover  : mix(#000, $primary-color, 25%);
-
-
-/*
-   Breakpoints
-   ========================================================================== */
-
-@include breakpoint-set("to ems", true);
-/*
-$small                      : 400px;
-$medium                     : 500px;
-$medium-wide                : 550px;
-$large                      : 1200px;
-$x-large                    : 1800px;
-*/
-
-$small                      : 600px !default;
-$medium                     : 768px !default;
-$medium-wide                : 900px !default;
-$large                      : 925px !default;
-$x-large                    : 1280px !default;
-
-/*
-   Grid
-   ========================================================================== */
-
-$right-sidebar-width-narrow : 0px;
-$right-sidebar-width        : 0px;
-$right-sidebar-width-wide   : 0px;
-
-$susy: (
-  columns: 12,
-  column-width: 120px,
-  gutters: 1/4,
-  math: fluid,
-  output: float,
-  gutter-position: after,
-  container: $large,
-  global-box-sizing: border-box,
-  // debug: (
-  //   image: show,
-  //   color: blue,
-  //   output: overlay,
-  //   toggle: top right,
-  // ),
-);
-
-
-/*
-   Other
-   ========================================================================== */
-
-$border-radius              : 4px;
-$box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.125);
-$navicon-width              : 28px;
-$navicon-height             : 4px;
-$global-transition          : all 0.2s ease-in-out;
+   /* paragraph indention */
+   $paragraph-indent           : false; // 设置段落缩进，false表示不缩进，true表示缩进
+   $indent-var                 : 0.5em; // 缩进的宽度设置为0.5em
+   
+   /* system typefaces  // 系统字体 */
+   $serif                      : Georgia, Times, serif; // 定义衬线字体的候选字体列表
+   // $sans-serif                 : "Trebuchet MS", Helvetica, sans-serif; // 这是一个无衬线字体的候选字体列表（已注释）
+   // $sans-serif                 : "Cascadia Code", monospace; // 另一个无衬线字体列表，注释掉了
+   
+   // $sans-serif                 : Georgia, serif, sans-serif; // 另一个无衬线字体列表，注释掉了
+   
+   $sans-serif                 : -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif; 
+   // 设置当前使用的无衬线字体列表，优先使用系统字体
+   
+   //$monospace                  : "Consolas", monospace; // 注释掉的等宽字体设置
+   $monospace                  : Monaco, Consolas, "Lucida Console", monospace; // 使用的等宽字体列表
+   
+   /* sans serif typefaces  // 无衬线字体 */
+   $sans-serif-narrow          : $sans-serif; // 设置窄体无衬线字体，使用上面定义的$sans-serif
+   $helvetica                  : Helvetica, "Helvetica Neue", Arial, sans-serif; // 定义特定的Helvetica字体列表
+   
+   /* serif typefaces  // 衬线字体 */
+   $georgia                    : Georgia, serif; // 定义Georgia字体列表
+   $times                      : Times, serif; // 定义Times字体列表
+   $bodoni                     : "Bodoni MT", serif; // 定义Bodoni字体列表
+   $calisto                    : "Calisto MT", serif; // 定义Calisto字体列表
+   $garamond                   : Garamond, serif; // 定义Garamond字体列表
+   
+   $global-font-family         : $sans-serif; // 全局字体族设置为无衬线字体$sans-serif
+   $header-font-family         : $sans-serif; // 标题字体族设置为无衬线字体$sans-serif
+   $caption-font-family        : $serif; // 图片标题字体族设置为衬线字体$serif
+   
+   /* type scale  // 字体大小比例 */
+   $type-size-1                : 2.441em;  // ~39.056px  定义第一级字体大小，约等于39.056px
+   $type-size-2                : 1.953em;  // ~31.248px  定义第二级字体大小，约等于31.248px
+   $type-size-3                : 1.4em;  // ~25.008px  定义第三级字体大小，约等于25.008px
+   $type-size-4                : 1.2em;   // ~20px  定义第四级字体大小，约等于20px
+   $type-size-5                : 1em;      // ~16px  定义第五级字体大小，约等于16px
+   $type-size-6                : 1em;   // ~12px  定义第六级字体大小，保持为1em
+   $type-size-7                : 0.6875em; // ~11px  定义第七级字体大小，约等于11px
+   $type-size-8                : 0.625em;  // ~10px  定义第八级字体大小，约等于10px
+   
+   
+   /*
+      Colors  // 颜色设置
+      ========================================================================== */
+   
+   $gray                       : #7a8288;  // 定义基本的灰色
+   $dark-gray                  : mix(#000, $gray, 40%);  // 定义深灰色，混合了40%的黑色和灰色
+   $darker-gray                : mix(#000, $gray, 60%);  // 定义更深的灰色，混合了60%的黑色和灰色
+   $light-gray                 : mix(#fff, $gray, 50%);  // 定义浅灰色，混合了50%的白色和灰色
+   $lighter-gray               : mix(#fff, $gray, 90%);  // 定义更浅的灰色，混合了90%的白色和灰色
+   
+   $body-color                 : #fff;  // 正文颜色设置为白色
+   $background-color           : #fff;  // 背景颜色设置为白色
+   $code-background-color      : #fafafa;  // 代码块的背景颜色设置为淡灰色
+   $code-background-color-dark : $light-gray;  // 深色模式下代码块背景颜色设置为浅灰色
+   $text-color                 : $dark-gray;  // 文本颜色设置为深灰色
+   $border-color               : $lighter-gray;  // 边框颜色设置为更浅的灰色
+   
+   $primary-color              : #7a8288;  // 定义主色调为灰色
+   $success-color              : #62c462;  // 成功提示颜色设置为绿色
+   $warning-color              : #f89406;  // 警告提示颜色设置为橙色
+   $danger-color               : #ee5f5b;  // 危险提示颜色设置为红色
+   $info-color                 : #224b8d;  // 信息提示颜色设置为蓝色
+   // $info-color                 : #52adc8;  // 注释掉的另一个信息提示颜色
+   
+   /* brands  // 品牌颜色 */
+   $behance-color              : #1769FF;  // Behance品牌颜色
+   $dribbble-color             : #ea4c89;  // Dribbble品牌颜色
+   $facebook-color             : #3b5998;  // Facebook品牌颜色
+   $flickr-color               : #ff0084;  // Flickr品牌颜色
+   $foursquare-color           : #0072b1;  // Foursquare品牌颜色
+   $github-color               : #171516;  // GitHub品牌颜色
+   $google-plus-color          : #dd4b39;  // Google Plus品牌颜色
+   $instagram-color            : #517fa4;  // Instagram品牌颜色
+   $lastfm-color               : #d51007;  // Last.fm品牌颜色
+   $linkedin-color             : #007bb6;  // LinkedIn品牌颜色
+   $pinterest-color            : #cb2027;  // Pinterest品牌颜色
+   $rss-color                  : #fa9b39;  // RSS品牌颜色
+   $soundcloud-color           : #ff3300;  // SoundCloud品牌颜色
+   $stackoverflow-color        : #fe7a15;  // StackOverflow品牌颜色
+   $tumblr-color               : #32506d;  // Tumblr品牌颜色
+   $twitter-color              : #55acee;  // Twitter品牌颜色
+   $vimeo-color                : #1ab7ea;  // Vimeo品牌颜色
+   $vine-color                 : #00bf8f;  // Vine品牌颜色
+   $youtube-color              : #bb0000;  // YouTube品牌颜色
+   $xing-color                 : #006567;  // Xing品牌颜色
+   
+   
+   /* links  // 链接颜色 */
+   $link-color                 : $info-color;  // 链接颜色设置为信息颜色
+   $link-color-hover           : mix(#000, $link-color, 25%);  // 链接悬停时的颜色，混合了25%的黑色和信息颜色
+   $link-color-visited         : mix(#fff, $link-color, 25%);  // 访问过的链接颜色，混合了25%的白色和信息颜色
+   $masthead-link-color        : $primary-color;  // 页眉链接颜色设置为主色调
+   $masthead-link-color-hover  : mix(#000, $primary-color, 25%);  // 页眉链接悬停时的颜色，混合了25%的黑色和主色调
+   
+   
+   /*
+      Breakpoints  // 响应式断点
+      ========================================================================== */
+   
+   @include breakpoint-set("to ems", true);  // 使用mixin设置断点单位为ems
+   /*
+   $small                      : 400px;  // 小屏幕的断点为400px（注释掉）
+   $medium                     : 500px;  // 中等屏幕的断点为500px（注释掉）
+   $medium-wide                : 550px;  // 中宽屏幕的断点为550px（注释掉）
+   $large                      : 1200px;  // 大屏幕的断点为1200px（注释掉）
+   $x-large                    : 1800px;  // 超大屏幕的断点为1800px（注释掉）
+   */
+   
+   $small                      : 600px !default;  // 小屏幕的断点为600px
+   $medium                     : 768px !default;  // 中等屏幕的断点为768px
+   $medium-wide                : 900px !default;  // 中宽屏幕的断点为900px
+   $large                      : 925px !default;  // 大屏幕的断点为925px
+   $x-large                    : 1280px !default;  // 超大屏幕的断点为1280px
+   
+   /*
+      Grid  // 网格系统
+      ========================================================================== */
+   
+   $right-sidebar-width-narrow : 0px;  // 右侧边栏窄屏幕宽度设置为0px
+   $right-sidebar-width        : 0px;  // 右侧边栏宽度设置为0px
+   $right-sidebar-width-wide   : 0px;  // 右侧边栏宽屏幕宽度设置为0px
+   
+   $susy: (  // 配置Susy网格系统
+     columns: 12,  // 设置12列网格
+     column-width: 120px,  // 每列宽度为120px
+     gutters: 1/4,  // 设置列间距为列宽的1/4
+     math: fluid,  // 使用流体布局计算方式
+     output: float,  // 输出为浮动布局
+     gutter-position: after,  // 列间距在每列之后
+     container: $large,  // 容器宽度设置为$large
+     global-box-sizing: border-box,  // 全局盒模型设置为border-box
+     // debug: (  // 调试选项（已注释）
+     //   image: show,  // 显示网格图像
+     //   color: blue,  // 调试网格颜色为蓝色
+     //   output: overlay,  // 输出为覆盖模式
+     //   toggle: top right,  // 在右上角切换调试模式
+     // ),
+   );
+   
+   
+   /*
+      Other  // 其他样式
+      ========================================================================== */
+   
+   $border-radius              : 4px;  // 全局圆角半径设置为4px
+   $box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.125);  // 全局阴影效果设置为轻微阴影
+   $navicon-width              : 28px;  // 导航图标宽度设置为28px
+   $navicon-height             : 4px;  // 导航图标高度设置为4px
+   $global-transition          : all 0.2s ease-in-out;  // 全局过渡效果设置为0.2秒的缓入缓出
