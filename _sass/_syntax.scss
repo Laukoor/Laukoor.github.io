@@ -3,38 +3,38 @@
    ========================================================================== */
 
 div.highlighter-rouge, figure.highlight {
-  position: relative;
-  margin-bottom: 1em;
-  padding: 1em;
-  border: 1px solid $border-color;
-  border-radius: $border-radius;
-  background-color: $code-background-color;
-  box-shadow: $box-shadow;
+  position: relative; // 使元素相对定位，这样内部的绝对定位元素可以相对于它进行定位
+  margin-bottom: 1em; // 设置底部外边距为1em
+  padding: 1em; // 设置内边距为1em
+  border: 1px solid $border-color; // 设置边框颜色为变量$border-color定义的颜色
+  border-radius: $border-radius; // 设置边框圆角为变量$border-radius定义的值
+  background-color: $code-background-color; // 设置背景颜色为变量$code-background-color定义的颜色
+  box-shadow: $box-shadow; // 设置盒子阴影为变量$box-shadow定义的值
 
   &:before {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 0.5em;
-    background-color: $lighter-gray;
-    content: "\f121";
-    font-family: "fontawesome" !important;
-    font-size: $type-size-6;
-    line-height: 1;
-    text-transform: none;
-    speak: none;
+    position: absolute; // 绝对定位，确保此伪元素定位在其父元素内
+    top: 0; // 顶部对齐父元素
+    right: 0; // 右侧对齐父元素
+    padding: 0.5em; // 设置内边距为0.5em
+    background-color: $lighter-gray; // 设置背景颜色为变量$lighter-gray定义的颜色
+    content: "\f121"; // 使用字体图标（Font Awesome）的Unicode字符
+    font-family: "fontawesome" !important; // 使用Font Awesome字体，强制优先应用
+    font-size: $type-size-6; // 设置字体大小为变量$type-size-6定义的值
+    line-height: 1; // 设置行高为1倍字体大小
+    text-transform: none; // 不进行文本转换
+    speak: none; // 禁止屏幕阅读器读出此内容
   }
-
+  
   .highlight {
-    margin: 0;
-    font-family: $monospace;
-    font-size: $type-size-7;
-    line-height: 1.8;
+    margin: 0; // 设置内部高亮代码块的外边距为0
+    font-family: $monospace; // 设置代码块字体为等宽字体，由$monospace变量定义
+    font-size: $type-size-5; // 设置代码块字体大小为变量$type-size-7定义的值
+    line-height: 1.8; // 设置代码块行高为1.8倍字体大小
   }
 }
-
-.highlight table td { padding: 5px; }
-.highlight table pre { margin: 0; }
+  
+.highlight table td { padding: 5px; } // 为高亮代码中的表格单元格设置5px的填充
+.highlight table pre { margin: 0; } // 为高亮代码中的表格中的<pre>元素设置外边距为0
 
 
 /*
@@ -53,71 +53,71 @@ div.highlighter-rouge, figure.highlight {
    green     #859900  operators, other keywords
    ========================================================================== */
 
-.highlight .c { color: #93a1a1 } /* Comment */
-.highlight .err { color: #586e75 } /* Error */
-.highlight .g { color: #586e75 } /* Generic */
-.highlight .k { color: #859900 } /* Keyword */
-.highlight .l { color: #586e75 } /* Literal */
-.highlight .n { color: #586e75 } /* Name */
-.highlight .o { color: #859900 } /* Operator */
-.highlight .x { color: #cb4b16 } /* Other */
-.highlight .p { color: #586e75 } /* Punctuation */
-.highlight .cm { color: #93a1a1 } /* Comment.Multiline */
-.highlight .cp { color: #859900 } /* Comment.Preproc */
-.highlight .c1 { color: #93a1a1 } /* Comment.Single */
-.highlight .cs { color: #859900 } /* Comment.Special */
-.highlight .gd { color: #2aa198 } /* Generic.Deleted */
-.highlight .ge { color: #586e75; font-style: italic } /* Generic.Emph */
-.highlight .gr { color: #dc322f } /* Generic.Error */
-.highlight .gh { color: #cb4b16 } /* Generic.Heading */
-.highlight .gi { color: #859900 } /* Generic.Inserted */
-.highlight .go { color: #586e75 } /* Generic.Output */
-.highlight .gp { color: #586e75 } /* Generic.Prompt */
-.highlight .gs { color: #586e75; font-weight: bold } /* Generic.Strong */
-.highlight .gu { color: #cb4b16 } /* Generic.Subheading */
-.highlight .gt { color: #586e75 } /* Generic.Traceback */
-.highlight .kc { color: #cb4b16 } /* Keyword.Constant */
-.highlight .kd { color: #22b3eb } /* Keyword.Declaration */
-.highlight .kn { color: #859900 } /* Keyword.Namespace */
-.highlight .kp { color: #859900 } /* Keyword.Pseudo */
-.highlight .kr { color: #22b3eb } /* Keyword.Reserved */
-.highlight .kt { color: #dc322f } /* Keyword.Type */
-.highlight .ld { color: #586e75 } /* Literal.Date */
-.highlight .m { color: #2aa198 } /* Literal.Number */
-.highlight .s { color: #2aa198 } /* Literal.String */
-.highlight .na { color: #586e75 } /* Name.Attribute */
-.highlight .nb { color: #B58900 } /* Name.Builtin */
-.highlight .nc { color: #22b3eb } /* Name.Class */
-.highlight .no { color: #cb4b16 } /* Name.Constant */
-.highlight .nd { color: #22b3eb } /* Name.Decorator */
-.highlight .ni { color: #cb4b16 } /* Name.Entity */
-.highlight .ne { color: #cb4b16 } /* Name.Exception */
-.highlight .nf { color: #22b3eb } /* Name.Function */
-.highlight .nl { color: #586e75 } /* Name.Label */
-.highlight .nn { color: #586e75 } /* Name.Namespace */
-.highlight .nx { color: #586e75 } /* Name.Other */
-.highlight .py { color: #586e75 } /* Name.Property */
-.highlight .nt { color: #22b3eb } /* Name.Tag */
-.highlight .nv { color: #22b3eb } /* Name.Variable */
-.highlight .ow { color: #859900 } /* Operator.Word */
-.highlight .w { color: #586e75 } /* Text.Whitespace */
-.highlight .mf { color: #2aa198 } /* Literal.Number.Float */
-.highlight .mh { color: #2aa198 } /* Literal.Number.Hex */
-.highlight .mi { color: #2aa198 } /* Literal.Number.Integer */
-.highlight .mo { color: #2aa198 } /* Literal.Number.Oct */
-.highlight .sb { color: #93a1a1 } /* Literal.String.Backtick */
-.highlight .sc { color: #2aa198 } /* Literal.String.Char */
-.highlight .sd { color: #586e75 } /* Literal.String.Doc */
-.highlight .s2 { color: #2aa198 } /* Literal.String.Double */
-.highlight .se { color: #cb4b16 } /* Literal.String.Escape */
-.highlight .sh { color: #586e75 } /* Literal.String.Heredoc */
-.highlight .si { color: #2aa198 } /* Literal.String.Interpol */
-.highlight .sx { color: #2aa198 } /* Literal.String.Other */
-.highlight .sr { color: #dc322f } /* Literal.String.Regex */
-.highlight .s1 { color: #2aa198 } /* Literal.String.Single */
-.highlight .ss { color: #2aa198 } /* Literal.String.Symbol */
-.highlight .bp { color: #22b3eb } /* Name.Builtin.Pseudo */
-.highlight .vc { color: #22b3eb } /* Name.Variable.Class */
-.highlight .vg { color: #22b3eb } /* Name.Variable.Global */
-.highlight .vi { color: #22b3eb } /* Name.Variable.Instance */
-.highlight .il { color: #2aa198 } /* Literal.Number.Integer.Long */
+   .highlight .c { color: #93a1a1 } /* 注释 */
+   .highlight .err { color: #586e75 } /* 错误 */
+   .highlight .g { color: #586e75 } /* 通用元素 */
+   .highlight .k { color: #859900 } /* 关键字 */
+   .highlight .l { color: #586e75 } /* 字面量 */
+   .highlight .n { color: #586e75 } /* 名称 */
+   .highlight .o { color: #859900 } /* 操作符 */
+   .highlight .x { color: #cb4b16 } /* 其他 */
+   .highlight .p { color: #586e75 } /* 标点符号 */
+   .highlight .cm { color: #93a1a1 } /* 多行注释 */
+   .highlight .cp { color: #859900 } /* 预处理指令中的注释 */
+   .highlight .c1 { color: #93a1a1 } /* 单行注释 */
+   .highlight .cs { color: #859900 } /* 特殊注释 */
+   .highlight .gd { color: #2aa198 } /* 被删除的代码 */
+   .highlight .ge { color: #586e75; font-style: italic } /* 强调文字，通常为斜体 */
+   .highlight .gr { color: #dc322f } /* 错误通用元素 */
+   .highlight .gh { color: #cb4b16 } /* 标题 */
+   .highlight .gi { color: #859900 } /* 被插入的代码 */
+   .highlight .go { color: #586e75 } /* 输出 */
+   .highlight .gp { color: #586e75 } /* 提示符 */
+   .highlight .gs { color: #586e75; font-weight: bold } /* 强调文字，通常为粗体 */
+   .highlight .gu { color: #cb4b16 } /* 副标题 */
+   .highlight .gt { color: #586e75 } /* 跟踪元素 */
+   .highlight .kc { color: #cb4b16 } /* 常量关键字 */
+   .highlight .kd { color: #22b3eb } /* 声明关键字 */
+   .highlight .kn { color: #859900 } /* 命名空间关键字 */
+   .highlight .kp { color: #859900 } /* 伪关键字 */
+   .highlight .kr { color: #22b3eb } /* 保留关键字 */
+   .highlight .kt { color: #dc322f } /* 类型关键字 */
+   .highlight .ld { color: #586e75 } /* 日期字面量 */
+   .highlight .m { color: #2aa198 } /* 数字字面量 */
+   .highlight .s { color: #2aa198 } /* 字符串字面量 */
+   .highlight .na { color: #586e75 } /* 属性名 */
+   .highlight .nb { color: #B58900 } /* 内建对象 */
+   .highlight .nc { color: #22b3eb } /* 类名 */
+   .highlight .no { color: #cb4b16 } /* 常量名 */
+   .highlight .nd { color: #22b3eb } /* 装饰器名 */
+   .highlight .ni { color: #cb4b16 } /* 实体名 */
+   .highlight .ne { color: #cb4b16 } /* 异常名 */
+   .highlight .nf { color: #22b3eb } /* 函数名 */
+   .highlight .nl { color: #586e75 } /* 标签名 */
+   .highlight .nn { color: #586e75 } /* 命名空间名 */
+   .highlight .nx { color: #586e75 } /* 其他名称 */
+   .highlight .py { color: #586e75 } /* 属性名称 */
+   .highlight .nt { color: #22b3eb } /* 标签 */
+   .highlight .nv { color: #22b3eb } /* 变量名 */
+   .highlight .ow { color: #859900 } /* 操作符中的单词 */
+   .highlight .w { color: #586e75 } /* 空白符 */
+   .highlight .mf { color: #2aa198 } /* 浮点数字面量 */
+   .highlight .mh { color: #2aa198 } /* 十六进制数字面量 */
+   .highlight .mi { color: #2aa198 } /* 整数字面量 */
+   .highlight .mo { color: #2aa198 } /* 八进制数字面量 */
+   .highlight .sb { color: #93a1a1 } /* 反引号字符串 */
+   .highlight .sc { color: #2aa198 } /* 字符字面量 */
+   .highlight .sd { color: #586e75 } /* 文档字符串 */
+   .highlight .s2 { color: #2aa198 } /* 双引号字符串 */
+   .highlight .se { color: #cb4b16 } /* 字符串转义 */
+   .highlight .sh { color: #586e75 } /* here文档字符串 */
+   .highlight .si { color: #2aa198 } /* 插值字符串 */
+   .highlight .sx { color: #2aa198 } /* 其他字符串 */
+   .highlight .sr { color: #dc322f } /* 正则表达式字符串 */
+   .highlight .s1 { color: #2aa198 } /* 单引号字符串 */
+   .highlight .ss { color: #2aa198 } /* 符号字符串 */
+   .highlight .bp { color: #22b3eb } /* 内建伪对象 */
+   .highlight .vc { color: #22b3eb } /* 类变量 */
+   .highlight .vg { color: #22b3eb } /* 全局变量 */
+   .highlight .vi { color: #22b3eb } /* 实例变量 */
+   .highlight .il { color: #2aa198 } /* 长整数字面量 */
