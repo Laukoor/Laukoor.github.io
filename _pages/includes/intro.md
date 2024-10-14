@@ -1,4 +1,4 @@
-I am currently a graduate student at IMECAS. I have a broad interest in transportation issues and a belief that data and smart technologies could help us better solve these problems. My long-term goal is to help reshape cities to achieve ***efficiency***, ***equity*** and ***sustainability*** by transport planning and management.
+
 
 <!-- > **Open to work!**  
 > 
@@ -13,7 +13,7 @@ I am currently a graduate student at IMECAS. I have a broad interest in transpor
 # Open to work!
 position = 'PhD'
 year = '2025 Fall'
-fields = ['transport planning', 'transport management', 'etc.']
+fields = [' Computer Architecture ', 'transport management', 'etc.']
 interests = [
     'mixed traffic future with AVs, EVs, and micromobility',
     'shared mobility (car-sharing, ride-hailing, shared micromobility, etc.)',
