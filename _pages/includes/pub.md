@@ -8,4 +8,4 @@
 
 ## Conference
 
-- `2024.09`: <u>Prediction of 3D Morphological Features of Nano-Patterns from SEM Images Using a Frequency Domain Approach</u>.Presented at ***SPIE Proceeding 13215***, Monterey, California, 2024.9.30-2024.10.3
+- `2024.09`: <u>Prediction of 3D Morphological Features of Nano-Patterns from SEM Images Using a Frequency Domain Approach</u>. Presented at ***SPIE Proceeding 13215***, Monterey, California, 2024.9.30-2024.10.03
