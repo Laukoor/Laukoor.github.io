@@ -15,6 +15,10 @@ main:
   - title: "Outcomes"
     url: "/#publications"
 
+  - title: "Skills"
+    url: "/#skills"
+  
+
   # - title: "Honors and Awards"
   #   url: "/#honors-and-awards"
 
