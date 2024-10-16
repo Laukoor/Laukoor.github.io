@@ -4,7 +4,7 @@
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">SPIE.Proc13215.2024</div><img src='images/selected pub/SPIE.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-**Comprehensive 3D Feature Estimation and Reconstruction of Microstructures** \\
+**Comprehensive 3D Feature Estimation and Reconstruction of Microstructures** <br>
 
 - Estimation via 2D Images.
 - Spatial and frequency domain approach.
