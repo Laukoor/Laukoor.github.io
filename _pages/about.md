@@ -22,7 +22,7 @@ if site.google_scholar_stats_use_cdn %}
 <span class='anchor' id='news'></span>
 {% include_relative includes/news.md %}
 
-<span class='anchor' id='projects'></span>
+{% <span class='anchor' id='projects'></span>%}
 {% include_relative includes/proj.md %}
 
 <span class='anchor' id='publications'></span>
