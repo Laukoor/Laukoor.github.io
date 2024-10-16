@@ -22,7 +22,7 @@
 - From Hardware Circuit Design to Control Software and User Interface.
 - Designed with STM32H7 SoC and C, supports Multiple Operating Systems.
 
-<font color=red>Outstanding Graduation Thesis of the College</font>
+**<font color=red>- Outstanding Graduation Thesis of the College.</font>**
 </div>
 </div>
 
