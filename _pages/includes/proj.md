@@ -1,14 +1,14 @@
 # 🏷️ Projects
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">TRB.2024</div><img src='images/selected pub/TRB2024.png' alt="sym" width="100%"></div></div>
+## Research Project
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">SPIE.Proc13215.2024</div><img src='images/selected pub/SPIE.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-**Light-duty Vehicle Brake Wear Particle Emission Modeling** \\
-[**[Code]**](https://github.com/QiuziChen/brake-wear-emission-modeling)
+**Comprehensive 3D Feature Estimation and Reconstruction of Microstructures** \\
 
-- Brake wear particle emission modeling.
-- Spatial and temporal analysis.
-- Trip-level influencing factor analysis.
+- Estimation via 2D Images.
+- Spatial and frequency domain approach.
+- Algorithm Optimization & Hardware Acceleration.
 
 </div>
 </div>
@@ -25,3 +25,5 @@
 
 </div>
 </div>
+
+## Acedemic Project
