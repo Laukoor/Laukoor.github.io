@@ -13,15 +13,14 @@
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Transp.Res.D.2023</div><img src='images/selected pub/TRD2023.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Bachelor's Thesis</div><img src='images/selected pub/kitty.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-**Electric Bus Charging Planning and Scheduling** \\
-[**[Paper]**](https://doi.org/10.1016/j.trd.2023.103724) [**[Code]**](https://github.com/QiuziChen/alns-framework-for-evsp.git)
+**Single-Axis Displacement Control System for Photoacoustic CT** <br>
 
-- Electric vehicle scheduling optimization.
-- ALNS algorithm development.
-- Cost-effectiveness evaluation under uncertainty.
+- Customized for the Imaging Characteristics of Photoacoustic CT.
+- From Hardware Circuit Design to Control Software and User Interface.
+- Designed with STM32H7 SoC and C, supports Multiple Operating Systems.
 
 </div>
 </div>
