@@ -26,4 +26,18 @@
 </div>
 </div>
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CUPT 2020</div><img src='images/selected pub/CPUT.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**Swinging Sound Tube** <br>
+
+- Explained the sound-producing mechanism of the sound tube.
+- Provided a quantitative formula for the sound tube's frequency.
+- Conducted experimental verification through home-based experiments.
+
+**<font color=red>- Third Prize in the China Undergraduate Physics Tournament 2020.</font>**
+</div>
+</div>
+
+
 ## Acedemic Project
