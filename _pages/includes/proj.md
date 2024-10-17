@@ -26,7 +26,7 @@
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CUPT 2020</div><img src='images/selected pub/CPUT.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CUPT 2020</div><img src='images/selected pub/CUPT.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **Swinging Sound Tube** <br>
