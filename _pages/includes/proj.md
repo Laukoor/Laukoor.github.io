@@ -41,3 +41,16 @@
 
 
 ## Acedemic Project
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AICS 2023</div><img src='images/selected pub/AICS.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**Artificial Intelligence Computing Systems** <br>
+
+- Work with Cambricon's Cloud Platform and Practical Tutorials.
+- Software-Hardware Design for Intelligent Processors (DLP).
+- Image Style Transfer.
+
+**<font color=red>- Cambricon's Top 'Bang'(BCL) Developers.</font>**
+</div>
+</div>
+
