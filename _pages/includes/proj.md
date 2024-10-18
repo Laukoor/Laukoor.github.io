@@ -54,3 +54,17 @@
 </div>
 </div>
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACSA 2023</div><img src='images/selected pub/IEDA.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[**[Code & Report]**](https://github.com/Laukoor/iFlow-report)
+**Advanced Computer System Architecture** <br>
+
+- Participated in the Beta Testing of the Open-Source EDA Tool [**[IEDA]**](https://github.com/OSCC-Project/iEDA).
+- Built with Hyper-V and WSL Environment.
+- Ran Synthesis, Floorplan, CTS, Filler, Route, and Generate Layout on Simple Designs(e.g., uart).
+- Implemented designs with various process libraries (e.g., Sky130, nangate45).
+- Ran the backend flow on sophisticated RISC-V chips, compiled from Chisel files.
+- Report Bugs.
+
+</div>
+</div>
