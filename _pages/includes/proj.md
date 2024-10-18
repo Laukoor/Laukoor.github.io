@@ -56,8 +56,9 @@
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACSA 2023</div><img src='images/selected pub/IEDA.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
-[**[Code & Report]**](https://github.com/Laukoor/iFlow-report)
+
 **Advanced Computer System Architecture** <br>
+[**[Code & Report]**](https://github.com/Laukoor/iFlow-report)<br>
 
 - Participated in the Beta Testing of the Open-Source EDA Tool [**[IEDA]**](https://github.com/OSCC-Project/iEDA).
 - Built with Hyper-V and WSL Environment.
