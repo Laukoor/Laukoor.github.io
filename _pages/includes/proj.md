@@ -46,7 +46,7 @@
 
 **Artificial Intelligence Computing Systems** <br>
 
-- Work with Cambricon's Cloud Platform and Practical Tutorials.
+- Work with **Cambricon**'s Cloud Platform and Practical Tutorials.
 - Software-Hardware Design for Intelligent Processors (DLP).
 - Image Style Transfer.
 
@@ -66,6 +66,19 @@
 - Implemented designs with various process libraries (e.g., Sky130, nangate45).
 - Ran the backend flow on sophisticated RISC-V chips, compiled from Chisel files.
 - Report Bugs.
+
+</div>
+</div>
+
+## Internship Program
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Intern 2021</div><img src='images/selected pub/Intern.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**Simulation and Verification of IC Chip and SIP Package Interconnection** <br>
+
+- Technical Internship at **U-Creative**, a **Cadence** Channel Partner.
+- Signal and Power Integrity, SYZ & RLGC Modeling, and Electro-Thermal Effects in Packaging.
+- Work with Cadence OrCAD, Allegro, and Sigrity within the SPB integrated design platform.
 
 </div>
 </div>
