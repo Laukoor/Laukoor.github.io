@@ -10,5 +10,5 @@
   - Circuit Design and verification (AD, Cadence OrCAD, Allegro, Sigrity, etc.)
   - Multiphysics Simulation (COMSOL)
 - **Software:** Office, Photoshop, Premiere Pro, Lightroom
-- **Language:** Mandarin, English (IELTS: 7), Teochew dialect, Cantonese, (Hokkien, German with Basic Knowledge)
+- **Language:** Mandarin, English (IELTS: 7), Teochew, Cantonese, (German, Hokkien with Basic Knowledge)
 - **Others:** Photographing
