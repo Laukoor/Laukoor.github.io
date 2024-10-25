@@ -1,6 +1,6 @@
 # 🏷️ Skills
 
-- **Coding:** C, C++, Python, Verilog, VHDL, Spice, Linux
+- **Coding:** C, C++, Python, Matlab, Verilog, VHDL, Spice, Linux
 - **Techniques:**
   - Software and Hardware coding
   - Embedded and IoT System Design (Raspberry Pi, STM32, etc.)
