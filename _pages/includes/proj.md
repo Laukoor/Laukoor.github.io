@@ -20,7 +20,8 @@
 
 - Customized for the Imaging Characteristics of Photoacoustic CT.
 - From Hardware Circuit Design to Control Software and User Interface.
-- Designed with STM32H7 SoC, programmed in C and Matlab, supporting multiple operating systems.
+- Designed with STM32H7 SoC, programmed in C and Matlab
+- Supporting multiple operating systems.
 
 **<font color=red>- Outstanding Graduation Thesis of the College.</font>**
 </div>
