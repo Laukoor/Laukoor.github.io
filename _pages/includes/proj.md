@@ -63,7 +63,7 @@
 
 - Participated in the Beta Testing of the Open-Source EDA Tool [**[IEDA]**](https://github.com/OSCC-Project/iEDA).
 - Built with Hyper-V and WSL Environment.
-- Ran Synthesis, Floorplan, CTS, Filler, Route, and Generate Layout on Simple Designs(e.g., uart).
+- Ran Synthesis, Floorplan, CTS, Filler, Route, and Generate Layout on Simple Designs (e.g., uart).
 - Implemented designs with various process libraries (e.g., Sky130, nangate45).
 - Ran the backend flow on sophisticated RISC-V chips, compiled from Chisel files.
 - Report Bugs.
