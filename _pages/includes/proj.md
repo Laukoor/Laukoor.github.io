@@ -31,7 +31,7 @@ Supervisor: **Prof. Zeyu Chen**
 <div class='paper-box-text' markdown="1">
 
 **Swinging Sound Tube** <br>
-Supervisors: Prof. Yongyi Peng, Prof. Fuxin Xv, Prof. Liping Fu 
+Supervisors: **Prof. Yongyi Peng, Prof. Fuxin Xv, Prof. Liping Fu** 
 - Explained the sound-producing mechanism of the sound tube.
 - Provided a quantitative formula for the sound tube's frequency.
 - Conducted experimental verification through home-based experiments.
@@ -47,7 +47,7 @@ Supervisors: Prof. Yongyi Peng, Prof. Fuxin Xv, Prof. Liping Fu
 
 **Artificial Intelligence Computing Systems** <br>
 
-Advisor: **Prof.[Yunji Chen (ICTCAS)](https://scholar.google.com/citations?user=fXeoWugAAAAJ), Prof. Wei Li (ICTCAS), Prof. Ling Li (ISCAS)**
+Advisor: **Prof.[Yunji Chen](https://scholar.google.com/citations?user=fXeoWugAAAAJ) and Prof. Wei Li(ICTCAS), Prof. Ling Li (ISCAS)**
 - Work with **Cambricon**'s Cloud Platform and Practical Tutorials.
 - Software-Hardware Design for Intelligent Processors (DLP).
 - Image Style Transfer.
