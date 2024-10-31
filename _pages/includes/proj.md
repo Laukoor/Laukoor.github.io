@@ -5,7 +5,7 @@
 <div class='paper-box-text' markdown="1">
 
 **Comprehensive 3D Feature Estimation and Reconstruction of Microstructures** <br>
-
+Supervisor: **Prof. Libin Zhang, Prof. Yayi Wei**
 - Estimation via 2D Images.
 - Spatial and frequency domain approach.
 - Algorithm Optimization & Hardware Acceleration.
@@ -17,7 +17,7 @@
 <div class='paper-box-text' markdown="1">
 
 **Single-Axis Displacement Control System for Photoacoustic CT** <br>
-
+Supervisor: **Prof. Zeyu Chen**
 - Customized for the Imaging Characteristics of Photoacoustic CT.
 - From Hardware Circuit Design to Control Software and User Interface.
 - Designed with STM32H7 SoC, programmed in C and Matlab
@@ -31,7 +31,7 @@
 <div class='paper-box-text' markdown="1">
 
 **Swinging Sound Tube** <br>
-
+Supervisors: Prof. Yongyi Peng, Prof. Fuxin Xv, Prof. Liping Fu 
 - Explained the sound-producing mechanism of the sound tube.
 - Provided a quantitative formula for the sound tube's frequency.
 - Conducted experimental verification through home-based experiments.
@@ -47,6 +47,7 @@
 
 **Artificial Intelligence Computing Systems** <br>
 
+Advisor: **Prof.[Yunji Chen (ICTCAS)](https://scholar.google.com/citations?user=fXeoWugAAAAJ), Prof. Wei Li (ICTCAS), Prof. Ling Li (ISCAS)**
 - Work with **Cambricon**'s Cloud Platform and Practical Tutorials.
 - Software-Hardware Design for Intelligent Processors (DLP).
 - Image Style Transfer.
@@ -61,6 +62,7 @@
 **Advanced Computer System Architecture** <br>
 [**[Code & Report]**](https://github.com/Laukoor/iFlow-report)<br>
 
+Advisor: **Prof. [Haihua Shen](https://ieeexplore.ieee.org/author/37086083749)**
 - Participated in the Beta Testing of the Open-Source EDA Tool [**[IEDA]**](https://github.com/OSCC-Project/iEDA).
 - Built with Hyper-V and WSL Environment.
 - Ran Synthesis, Floorplan, CTS, Filler, Route, and Generate Layout on Simple Designs (e.g., uart).
