@@ -5,6 +5,7 @@
 <div class='paper-box-text' markdown="1">
 
 **Comprehensive 3D Feature Estimation and Reconstruction of Microstructures** <br>
+
 Supervisor: **Prof. Libin Zhang, Prof. Yayi Wei**
 - Estimation via 2D Images.
 - Spatial and frequency domain approach.
@@ -17,6 +18,7 @@ Supervisor: **Prof. Libin Zhang, Prof. Yayi Wei**
 <div class='paper-box-text' markdown="1">
 
 **Single-Axis Displacement Control System for Photoacoustic CT** <br>
+
 Supervisor: **Prof. Zeyu Chen**
 - Customized for the Imaging Characteristics of Photoacoustic CT.
 - From Hardware Circuit Design to Control Software and User Interface.
@@ -31,6 +33,7 @@ Supervisor: **Prof. Zeyu Chen**
 <div class='paper-box-text' markdown="1">
 
 **Swinging Sound Tube** <br>
+
 Supervisors: **Prof. Yongyi Peng, Prof. Fuxin Xv, Prof. Liping Fu** 
 - Explained the sound-producing mechanism of the sound tube.
 - Provided a quantitative formula for the sound tube's frequency.
@@ -59,7 +62,7 @@ Advisor: **Prof.[Yunji Chen](https://scholar.google.com/citations?user=fXeoWugAA
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACSA 2023</div><img src='images/selected pub/IEDA.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-**Advanced Computer System Architecture** <br>
+**Advanced Computer System Architecture** 
 [**[Code & Report]**](https://github.com/Laukoor/iFlow-report)<br>
 
 Advisor: **Prof. [Haihua Shen](https://ieeexplore.ieee.org/author/37086083749)**
