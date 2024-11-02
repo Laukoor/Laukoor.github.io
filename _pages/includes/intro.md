@@ -35,7 +35,7 @@ interests = [
     'Computer Architecture, CPU Microarchitecture and Reconfigurable Computing.',
     'Multicore / Multithreaded & Heterogeneous Computing (Resource Scheduling & Memory consistency & Cache Coherence).',
     'Circuit Design and Electronic System Implementation (HPC, Embedded Systems, etc).',
-    'Application of NN & DL on Depth Estimation and environmental Perception (Autonomous Driving, etc).',
+    'Application of NN & DL on Depth Estimation and environmental Perception (Autonomous Driving, 3D Reconstruction, etc).',
     'Quantum Computing.'
     ]
 interests.append(float('inf'))
