@@ -19,14 +19,14 @@ redirect_from:
 {% include_relative includes/intro.md %}
 {% include_relative includes/edu.md %}
 
-<span class='anchor' id='news'></span>
-{% include_relative includes/news.md %}
-
 <span class='anchor' id='skills'></span>
 {% include_relative includes/skills.md %}
 
 <span class='anchor' id='projects'></span>
 {% include_relative includes/proj.md %}
+
+<span class='anchor' id='news'></span>
+{% include_relative includes/news.md %}
 
 <span class='anchor' id='publications'></span>
 {% include_relative includes/pub.md %}
