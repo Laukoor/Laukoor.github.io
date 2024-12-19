@@ -24,7 +24,7 @@ interests = [
 
 
 
-
+<!-- > 
 ```python
 # Open to work!
 position = 'PhD'
@@ -40,3 +40,5 @@ interests = [
     ]
 interests.append(float('inf'))
 ```
+-->
+
